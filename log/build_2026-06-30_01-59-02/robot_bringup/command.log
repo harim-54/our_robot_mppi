@@ -1,0 +1,6 @@
+Invoking command in '/home/rim/robot_ws/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rim/robot_ws/src/robot_bringup -DCMAKE_INSTALL_PREFIX=/home/rim/robot_ws/install/robot_bringup
+Invoked command in '/home/rim/robot_ws/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rim/robot_ws/src/robot_bringup -DCMAKE_INSTALL_PREFIX=/home/rim/robot_ws/install/robot_bringup
+Invoking command in '/home/rim/robot_ws/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rim/robot_ws/build/robot_bringup -- -j28 -l28
+Invoked command in '/home/rim/robot_ws/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rim/robot_ws/build/robot_bringup -- -j28 -l28
+Invoking command in '/home/rim/robot_ws/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rim/robot_ws/build/robot_bringup
+Invoked command in '/home/rim/robot_ws/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rim/robot_ws/build/robot_bringup
