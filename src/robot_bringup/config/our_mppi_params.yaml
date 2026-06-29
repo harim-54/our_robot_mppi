@@ -50,8 +50,8 @@ controller_server:
           "PathFollowCritic",
           "PathAngleCritic",
           "PreferForwardCritic",
-          "SkidCritic",
-          "SlopeCritic",
+          "our_mppi_critics::SkidCritic",
+          "our_mppi_critics::SlopeCritic",
         ]
 
       # 기존 critic 설정
