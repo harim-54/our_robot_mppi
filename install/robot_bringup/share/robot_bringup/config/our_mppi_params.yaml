@@ -6,13 +6,13 @@ controller_server:
       plugin: "nav2_mppi_controller::MPPIController"
       
       # 시간 설정
-      time_steps: 56
+      time_steps: 30
       model_dt: 0.05
       model_delay_vx: 0.0
       model_delay_wz: 0.0
       
       # 샘플링 설정
-      batch_size: 2000
+      batch_size: 1000
       open_loop: false
       iteration_count: 1
       
@@ -40,7 +40,7 @@ controller_server:
       motion_model: "skid_steering"
       skid_steering:
         plugin: "mppi::SkidSteeringMotionModel"
-        track_width: 0.5  # 실측 후 변경
+        track_width: 0.4904  # 실측 후 변경
 
       # critics 목록 (우리 critic 추가)
       critics:
@@ -50,8 +50,8 @@ controller_server:
           "PathFollowCritic",
           "PathAngleCritic",
           "PreferForwardCritic",
-          "SkidCritic",
-          "SlopeCritic",
+          "our_mppi_critics::SkidCritic",
+          "our_mppi_critics::SlopeCritic",
         ]
 
       # 기존 critic 설정
@@ -91,7 +91,7 @@ controller_server:
         enabled: true
         cost_power: 1
         cost_weight: 10.0
-        track_width: 0.5  # 실측 후 변경
+        track_width: 0.4904  # 실측 후 변경
 
       SlopeCritic:
         enabled: true
